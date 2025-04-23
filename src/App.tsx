@@ -7,10 +7,12 @@ import Design from './pages/Design';
 import Function from './pages/Function';
 import Visual from './pages/Visual';
 import Library from './pages/Library';
+import ScriptLoader from './components/ScriptLoader';
 
 const App: React.FC = () => {
   return (
     <Router>
+      <ScriptLoader />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
