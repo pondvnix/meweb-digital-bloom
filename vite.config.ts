@@ -10,6 +10,10 @@ export default defineConfig({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: [
+      '892cbd94-2295-4a49-97c7-b7124bcef3e0.lovableproject.com',
+      'preview--meweb-digital-bloom.lovable.app'
+    ],
   },
   plugins: [
     react(),
@@ -20,3 +24,4 @@ export default defineConfig({
     },
   }
 });
+
